@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAvigation Bar using List</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin : 0px;
+            box-sizing: border-box; 
+        }
+        body{
+            background-color:red;
+        }
+        .heading{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+            color: white;
+        }
+        .container{
+            margin-top: 30px;
+            margin: 10px;
+            display: inline-flex;
+        }
+        .box{
+            background-color: white;
+            width: 320px;
+            height: 480px;
+            padding: 20px;
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 15px;
+            border:3px solid yellow;
+        }
+        .box h2{
+            text-align: center;
+        }
+        .box p{
+            text-align: justify;
+            font-size: 17px;
+        }
+        .image-heading{
+            text-align: center;
+            /* padding: 10px; */
+        }
+        .image-heading img{
+            width: 250px;
+            border-radius: 15px;
+        }
+
+        .read-more{
+            text-align: center;
+        }
+        .read-more a {
+            background-color: red;
+            text-decoration: none;
+            padding: 10px 80px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+
+        }
+        .read-more :hover{
+            background-color:blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="heading">
+        <h2 > PRACTICAL-6:CREATING FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h2>
+    </div>
+    
+
+    <div class="container">
+        <div class="box">
+            <div class="image-heading">
+                <img src="../Images/Practical-5/HTML.jfif" alt="">
+            </div><br>
+            <h2>Introduction to HTML</h2><br>
+            <p>
+                HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is the combination 
+            of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup language is used to define the 
+            text document within tag which defines the structure of web pages.
+            </p><br>
+
+            <div class="read-more">
+                <a href="./Practical_5_HTML.html">Read More</a>
+            </div>
+        </div>
+
+        <!-- for 2nd Box -->
+        <div class="box">
+            <div class="image-heading">
+                <img src="../Images/Practical-5/css.png" alt="">
+            </div><br>
+            <h2>Introduction to CSS</h2><br>
+            <p>
+                Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process 
+                of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you 
+                to do this independent of the HTML that makes up each web page.
+            </p><br>
+
+            <div class="read-more">
+                <a href="./Practical_5_CSS.html">Read More</a>
+            </div>
+        </div>
+
+        <!-- for 3rd box -->
+        <div class="box">
+            <div class="image-heading">
+                <img src="../Images/Practical-5/js.png" alt="">
+            </div><br>
+            <h2>Introduction to JavaScript</h2><br>
+            <p>
+                JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for 
+                the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on 
+                websites when applied to an HTML document.It is very usefull for Web designning.    
+            </p><br>
+
+            <div class="read-more">
+                <a href="./Practical_5_JAVASCRIPT.html">Read More</a>
+            </div>
+        </div>
+
+        <!-- for4th box -->
+        <div class="box">
+            <div class="image-heading">
+                <img src="../Images/Practical-5/bt.jfif"  style="width: 210px";>
+            </div><br>
+            <h2>Introduction to BootStrap</h2><br>
+            <p>
+                Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. 
+                is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites. 
+                 solves many problems which we had once, one of which is the cross-browser compatibility issue.
+            </p><br>
+
+            <div class="read-more">
+                <a href="./Practical_5_BOOT.html">Read More</a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
