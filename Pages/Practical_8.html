@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation Bar</title>
+    <style>
+        *{
+            padding: 0;margin: 0; box-sizing: border-box;
+        }
+        .container
+        {
+            width: 80%;
+            background-color:red;
+            margin-left: 10%;
+        }
+        .menu
+        {
+
+            background-color: grey;
+            text-align: center;
+        }
+        .menu ul{
+            display: inline-flex;
+            list-style-type: none;
+            
+          
+            
+        }
+        .menu ul li{
+            padding: 15px;
+            font-size: 20px;
+            /* width: 150px; */
+            /* background-color: #fff; */
+            margin: 10px;
+            text-transform: uppercase;
+            
+        }
+        .menu a{
+            text-decoration: none;
+        }
+        .menu li:hover
+        {
+            background-color: white;
+        }
+
+        .pic-container{
+            margin-top: 20px;
+            background: url('../Images/Practical-5/bt.jfif');
+            background-position: cover;
+            background-size: cover;
+            width:80%;
+            height: 20%;
+        }
+        .pic-container img{
+            width: 95%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                <li><a href="#">Team </a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="pic-container">
+            <!-- <img src="../Images/Practical-5/bt.jfif" alt=""> -->
+            <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore nostrum, maiores architecto cum voluptatum, dolorum, quaerat similique doloremque sed exercitationem voluptate harum veritatis. Deserunt asperiores debitis reiciendis neque distinctio.</p>
+        </div>
+
+       
+    </div>
+
+</body>
+</html>
