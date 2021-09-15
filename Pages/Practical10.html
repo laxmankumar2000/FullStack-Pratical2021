@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation bar</title>
+    <link rel="stylesheet" href="./Practical10.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        body{
+            height: 500vh;
+        }
+        header{
+            width: 100%;
+            /* height: 140px; */
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            position: fixed;
+            /* background: transparent; */
+        }
+        .logo , .logo img{
+            /* width: 150px; */
+            height: 100px;
+            display: inline-flex;
+        
+        }
+        h2{
+            color: white;
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 25px;
+
+        }
+
+        aside{
+            width:15%;
+            background-color: black;
+            height: 80vh;
+            margin-top: 1px;
+            float: left;
+            margin-top: 100px;
+        }
+        aside ul{
+            list-style-type: none;
+            font-size: 25px;
+           
+        }
+        aside ul li:nth-child(1)
+        {
+            border-top: 1px solid white;
+        }        
+        aside ul li{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid white;
+        }
+        aside ul li a{
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            /* padding:  20px; */
+            /* margin-right: 10px; */
+
+        }
+        aside ul li a:hover{
+            background-color: grey;
+            padding: 10px 30px;
+        }
+        aside ul li:hover{
+
+            border-left: 8px solid white;
+
+        }
+        
+        main iframe{
+            background-color: skyblue;
+            height: 80vh;
+            width: 80%;
+            float: left;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../Images/Tuf logo.png" alt="">
+            <h2>FullStack</h2>
+        </div>
+
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="hide-btn">
+            <i class="fa fa-close"></i>
+        </label>
+    </header>
+
+    <aside>
+        <ul>
+            <li><a href="#" target="myContent"><i class="fa fa-home" >Home</i></a></li>
+            <li><a href="#" target="myContent"><i class="fa fa-home" >About</i></a></li>
+            <li><a href="#" target="myContent"><i class="fa fa-home">Service</i></a></li>
+            <li><a href="#" target="myContent"><i class="fa fa-home">Blog</i></a></li>
+            <li><a href="#" target="myContent"><i class="fa fa-home">Contact</i></a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <iframe src="" frameborder="0" name="myContent"></iframe>
+    </main>
+
+
+    <div class="social">          
+        <a href="#" target="_blank" "><i class="fa fa-facebook-square"></i></a>
+        <a href="#" target="_blank" "><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+        <a href="#" target="_blank" "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="main-content">
+        <img src="../Images/Practical-10/clement-h-95YRwf6CNw8-unsplash.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptates aperiam reprehenderit rerum, maiores ducimus reiciendis assumenda similique optio vel, distinctio, minima architecto! Fugit nobis ipsum nesciunt esse corporis libero molestiae error temporibus tempora dolor sapiente earum a sequi sed, cum neque, laboriosam minima. Suscipit quia omnis ut accusamus blanditiis! Architecto numquam aliquam a, voluptatem magni, aspernatur maiores facere fuga, quo temporibus nesciunt magnam tempore. Obcaecati soluta nam culpa nobis recusandae repudiandae fugit, beatae asperiores ducimus quod aliquam sapiente ad maiores, atque illo voluptas perferendis architecto consequatur quos, consequuntur possimus error? In quidem repellat ipsa animi fugiat tempora veritatis deserunt blanditiis debitis, atque numquam rerum quam officia a, recusandae pariatur laudantium non! Officiis, tenetur? Earum dicta totam numquam animi, commodi ipsam a facilis veritatis ab quasi delectus nesciunt dignissimos cum at voluptas magnam nisi! Sed sapiente facilis est explicabo a aliquam eum ipsa illum, consequatur quidem deserunt beatae illo. Quisquam itaque architecto consectetur similique ipsum adipisci quibusdam corporis repellendus quis. Laborum, nisi architecto modi hic magnam magni eligendi cum dicta quo ducimus explicabo saepe, possimus eius dolore consequuntur. Corrupti odio in officia nam fuga minus ab voluptates id magni voluptas! Quia quisquam repudiandae, iusto debitis impedit quis provident aperiam accusamus voluptatibus nisi recusandae id soluta cum illo quibusdam labore voluptas delectus. Exercitationem earum nisi accusamus iure, nulla perferendis mollitia voluptates veritatis dolores facere corrupti voluptatibus a dolor, beatae quo provident. Unde, soluta. Provident itaque recusandae beatae, adipisci est aperiam dolorem unde incidunt delectus dolore nobis maxime? Hic, voluptatibus sequi beatae maiores reiciendis tempora recusandae dignissimos libero expedita labore voluptates impedit consequuntur, quasi placeat! Itaque architecto perferendis nulla aut, similique quia sit quibusdam magni officia laboriosam at voluptatum porro quaerat? Expedita facere commodi excepturi illum ex magnam ipsum tempora! Debitis, sint! Doloribus, eveniet ipsum, quidem vitae eaque quam quod doloremque repellendus blanditiis harum suscipit cupiditate impedit magnam deleniti vel nemo rem consequatur voluptatum sit obcaecati ut. Eum quasi quo corrupti voluptatibus est. Debitis beatae itaque, natus consectetur nulla quod voluptatibus! Reprehenderit, enim accusamus facilis dolor, illum porro quam culpa commodi temporibus quo quasi obcaecati minima maiores doloremque aspernatur unde cum nobis aperiam aut aliquam optio sunt! Ex recusandae minus asperiores aliquam vel? Vitae quibusdam possimus exercitationem optio amet quos sapiente quis distinctio maxime similique minima vel reiciendis quae obcaecati perspiciatis natus laborum libero, molestias nemo ratione sunt quidem enim expedita. Quo eligendi ad sapiente molestiae aut nostrum aliquam debitis explicabo distinctio dignissimos laudantium tenetur quaerat ratione, similique aliquid sed non! Illo quasi in animi magni beatae expedita itaque pariatur suscipit! Nulla id amet laudantium quis iure laborum exercitationem minus aut atque totam assumenda, hic sed soluta tempore, ut, cumque ducimus. Odio vitae sunt expedita ad adipisci aut distinctio possimus nam optio? Eveniet, obcaecati, quasi sint porro illo delectus, temporibus minus neque numquam molestiae quae saepe. Reprehenderit cupiditate cumque quaerat debitis adipisci ex voluptatibus aliquam, reiciendis voluptas error maxime! Voluptatum tempore modi cupiditate dolor fugiat? Quae reiciendis alias praesentium accusantium obcaecati nihil voluptate rerum laborum quia eius vitae explicabo deserunt, aliquam at?
+        </p>
+    
+</body>
+</html>
