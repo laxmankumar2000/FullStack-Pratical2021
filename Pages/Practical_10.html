@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vertical Navigation bar</title>
     <link rel="stylesheet" href="./Practical10.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
+
+
+
+
+<style>
         *{padding: 0;margin: 0;box-sizing: border-box;}
         body{
             height: 500vh;
@@ -88,6 +91,27 @@
             float: left;
             margin-top: 100px;
         }
+
+        .show-btn , .hide-btn{
+            font-size: 30px;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+            display: block;
+
+        }
+        .show-btn:hover , .hide-btn:hover{
+            color: gold;
+        }
+        
+        /* .hide-btn{
+            visibility: hidden;
+        } */
+        #check{
+            visibility: hidden;
+            z-index: -5;
+        }
+        
     </style>
 </head>
 <body>
