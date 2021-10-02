@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        table{
+            text-align: left;
+            line-height: 20px;
+            border-collapse: separate;
+            border-spacing: 5;
+            border: 2px solid #34495e;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: #fff;
+            /* font-family:Verdana; */
+        }
+
+        thead tr:first-child{
+            background:#34495e;
+            color: wheat;
+            border:none;
+            line-height: 40px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        thead tr th:first-child{
+            text-align: center;
+            line-height: 40px;
+            /* background-color: red; */
+            /* padding:5px; */
+        }
+
+        thead tr th:nth-child(3)
+        {
+            padding-left:50px;
+            /* background-color: green; */
+            /* text-align: left; */
+
+        }
+
+        th:first-child, td:first-child{
+            padding: 0 15px 0 20px ;
+            /* background-color: grey; */
+        }
+
+        /* for border line */
+        thead tr:last-child th{
+            border-bottom: 3px solid #ddd;
+        }
+        th{
+            font-weight: bold;
+        }
+
+
+
+        
+        tbody tr:hover{
+            /* background-color: red; */
+            cursor:default;
+        }
+
+        tbody tr:last-child td {
+            border:none;
+        }
+        
+        tbody tr td:nth-child(1)
+        {
+            width: 50px;
+        }
+        tbody tr td:nth-child(2)
+        {
+            width: 500px;
+            padding-right: 10px;
+            text-align: justify;
+        }
+        tbody tr td:nth-child(3)
+        {
+            padding-left:28px;
+            /* width: 100px; */
+        }
+        tbody tr td:nth-child(5)
+        {
+            /* padding-left:10px; */
+            /* width: 100px; */
+            font-size: 16px;
+        }
+        tbody td{
+            border-bottom: 1px solid #ddd;
+            height: 50px;
+        }
+
+        /* td:last-child{
+            text-align: center;
+        } */
+
+
+        
+
+        .edit:hover{
+            color: #0a79df;
+        }
+
+        .delete:hover{
+            color: #dc2a2a;
+        }
+        td.deliver{
+            color: green;
+        }
+        td.pending
+        {
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            color:fuchsia ;
+            font-size: 18px;
+        }
+        a:hover{
+            color: blue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">FullStack Live Pratical Book</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>Practical</th>
+                <th>Links</th>
+                <th>Status</th>
+                <th>Tools</th>
+            </tr>   
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Create a Web page including HTML basic skelton using Offline HTML 
+                    Editor and Online Editor</td>
+                <td><a href="./Practical_1.html">Practical-1</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>2</td>
+                <td>Create a web Page showing a basic html structure using character 
+                    Entities amd span Tag.</td>
+                <td><a href="./Practical_2.html">Practical-2</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+            
+
+            <tr>
+
+
+                <td>3</td>
+                <td>Live your First Web-page on Github.</td>
+                <td><a href="./Practical_3.html">Practical-3</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>4</td>
+                <td>Create a website having list of all practicals and their individual 
+                    Practical Page Links.</td>
+                <td><a href="./Practical_4.html">Practical-4</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Create a Web page Showing the use of Image-Map in the Web Application.</td>
+                <td><a href="./Practical_5.html">Practical-5</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Create   a following layout using css layout properties.</td>
+                <td><a href="./Practical_6.html">Practical-6</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Create   a following layout using div tags.</td>
+                <td><a href="./Practical_7.html">Practical-7</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Create   a web page having fixed nav bar.</td>
+                <td><a href="./Practical_8.html">Practical-8</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Create   a web page having fixed nav bar with responsive.</td>
+                <td><a href="./Practical_9.html">Practical-9</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Create a website having list of all practicals and their individual 
+                    Practical Page Links.</td>
+                <td><a href="./Practical_10.html">Practical-10</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>Create  a web page having fixed  vertical nav bar with responsive.</td>
+                <td><a href="./Practical_11.html">Practical-11</a></td>
+                <td class="deliver">Checked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>12</td>
+                <td>Create a website having list of all practicals and their individual 
+                    Practical Page Links.</td>
+                <td><a href="./Practical_12.html">Practical-12</a></td>
+                <td class="pending">UnChecked</td>
+                <td>
+                    <i  title="edit" class="material-icons button edit">Edit</i>
+                    <i  title="delete" class="material-icons button delete">Delete</i>
+                </td>
+            </tr>
+
+            
+
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

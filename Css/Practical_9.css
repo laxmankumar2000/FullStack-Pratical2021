@@ -15,7 +15,7 @@
     margin: auto;
     position: fixed;
     top :0;
-
+    /* display: inline-flex; */
 }
 
 html {
@@ -45,12 +45,16 @@ scroll-behavior: smooth;
     justify-content: space-around; */
 }
 
-    /* .menu{
-    display: inline-flex;
+    .menu{
+    /* display:flex; */
     list-style-type: none;
     float: right;
     padding: 0 20px;
-} */
+}
+/* .nav{
+    display: inline-flex;
+    float: right; */
+/* } */
 .menu li{
     padding: 15px;
     font-size: 20px;
@@ -59,6 +63,7 @@ scroll-behavior: smooth;
     margin: 10px;
     text-transform: uppercase;
     color: red;
+    display: inline-flex;
     /* position:absolute; */
     
 }
@@ -104,6 +109,7 @@ clear: both;
     margin-top: 100px;
     width: 100%;
     height: 700px;
+    display: flex;
     
     margin-bottom: 25px;
     text-align: left;
@@ -147,11 +153,15 @@ clear: both;
     margin-bottom: 15px;
 }
 .circle
-{
-    display: inline-flex;
+{width: 100%;
+    /* display: inline-flex; */
     /* margin-left: 1px; */
     margin-top: 30px;
-
+}
+.circle::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 .circle1 img{
     border-radius: 50%;
@@ -159,6 +169,10 @@ clear: both;
     width: 250px;
     height: 250px;
     margin-right: 40px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border:2px solid brown; */
 }
 .circle2 img{
@@ -333,10 +347,10 @@ clear: both;
 .show-btn:hover , .hide-btn:hover{
     color: gold;
 }
-.show-btn{
+.show-btn , .hide-btn{
    float: right;
     line-height: 70px;
-    /* display: none; */
+    display: none;
 }
 
 #check{
@@ -371,7 +385,7 @@ clear: both;
     }
 
     .menu{
-        /* display: none; */
+        display: block;
         position: fixed;
         top: 0;
         right: -100%;
@@ -383,6 +397,9 @@ clear: both;
         padding: 50px 0px;
         
         transition: 1s;
+    }
+    .menu ul{
+        display: block;
     }
     #check:checked ~ .menu{
         right: 0;
@@ -402,6 +419,79 @@ clear: both;
         right: 20px;
         top: 20px;
     }
+
+    .banner{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        color: gold;
+        /* margin-top: 20px; */
+
+
+
+    }
+    .banner h1{
+        font-size: 40px;
+        font-style: italic;
+        padding: 10px;
+        color: gold;
+    }
+    #sec-heading{
+        color:violet;
+    }
+    .circle{
+        width:100%;
+        /* height: 800px; */
+        background-color: gold;
+        /* position: relative; */
+    }
+    .circle::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .circle1 img{
+        border-radius: 50%;
+        margin-left: 30px;
+        /* background-color:orange; */
+        width: 250px;
+        height: 250px;
+        /* margin-right: 40px; */
+        float: left;
+        /* border:2px solid brown; */
+    }
+    .circle2 img{
+        border-radius: 50%;
+        margin-left: 30px;
+        /* background-color:orange; */
+        width: 250px;
+        height: 250px;
+        /* margin-right: 40px; */
+        float: left;
+        /* border:2px solid brown; */
+    }
+    .circle3 img{
+        border-radius: 50%;
+        /* margin-left: 30px; */
+        /* background-color:orange; */
+        width: 250px;
+        height: 250px;
+        margin-right: 100px;
+        /* float: right; */
+        /* border:2px solid brown; */
+    }
+    .circle4 img{
+        border-radius: 50%;
+        margin-left: 30px;
+        margin-top: 20px;
+        /* background-color:orange; */
+        width: 250px;
+        height: 250px;
+        /* margin-right: 40px; */
+        float: left;
+        /* border:2px solid brown; */
+    }
+
 
 
 
