@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* background-color: red; */
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+
+        }
+        h2{
+            text-transform: uppercase;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+
+        }
+
+        #btn1{
+            width: 70px;
+            height: 70px;
+            background-color: yellow;
+            font-size: 30px;
+            margin-left: 120px;
+        }
+        #count{
+            font-size: 50px;
+            color: red;
+            margin-left: 40px;
+
+        }
+        #text{
+            color: red;
+            font-size: 50px;
+        }
+        #btn2{
+            width: 70px;
+            height: 70px;
+            background-color: yellow;
+            margin-left: 50px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body style="background-color: purple;">
+
+    <div class="container">
+        <h2>counter</h2>
+
+        <button id="btn1" onclick="dec()"> <span id="text">-</span> </button>
+        <span id="count">0</span>
+        <button id="btn2" onclick="inc()"> <span id="text">+</span></button>
+    </div>
+
+    <script>
+        var counter = 0;
+        var btn1 = document.getElementById("btn1");
+        btn1.disabled = true;
+        function dec()
+        {
+            counter -=1;
+            document.getElementById("count").innerHTML = counter;
+            if (counter == 0) {
+                btn1.disabled = true;
+             }
+
+        }
+
+        function inc()
+        {
+            btn1.disabled = false;
+            counter +=1;
+            document.getElementById("count").innerHTML = counter;
+        }
+    </script>
+    
+</body>
+</html>
